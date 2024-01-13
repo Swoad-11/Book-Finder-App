@@ -30,7 +30,12 @@ export default function BookItem(book) {
         </div>
 
         <div className="space-y-3">
-          <h4 className="text-lg font-bold lg:text-xl">{book.book.bookName}</h4>
+          <h4 className="text-lg font-bold lg:text-xl">
+            {book.book.bookName.length > 21
+              ? `${book.book.bookName.slice(0, 21)}...`
+              : book.book.bookName}
+          </h4>
+
           <p className="text-xs lg:text-sm">
             By : <span>{book.book.authorName}</span>
           </p>
