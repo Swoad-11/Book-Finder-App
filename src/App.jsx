@@ -1,3 +1,6 @@
+import Books from "./components/Books/Books";
+import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -8,6 +11,11 @@ function App() {
        before:bg-[#EAE6D7] max-md:px-4 lg:text-lg before:lg:rounded-bl-[79px]"
       >
         <Navbar />
+        <main className="my-10 lg:my-14">
+          <Header />
+          <Books />
+        </main>
+        <Footer />
       </div>
     </>
   );

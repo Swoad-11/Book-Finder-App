@@ -1,6 +1,7 @@
 const booksData = {
   books: [
     {
+      id: "1",
       bookName: "The Great Gatsby",
       authorName: "F. Scott Fitzgerald",
       price: 12.99,
@@ -11,6 +12,7 @@ const booksData = {
       favorite: true,
     },
     {
+      id: "2",
       bookName: "To Kill a Mockingbird",
       authorName: "Harper Lee",
       price: 14.99,
@@ -21,6 +23,7 @@ const booksData = {
       favorite: false,
     },
     {
+      id: "3",
       bookName: "1984",
       authorName: "George Orwell",
       price: 11.99,
@@ -31,6 +34,7 @@ const booksData = {
       favorite: true,
     },
     {
+      id: "4",
       bookName: "The Hobbit",
       authorName: "J.R.R. Tolkien",
       price: 10.99,
@@ -41,6 +45,7 @@ const booksData = {
       favorite: false,
     },
     {
+      id: "5",
       bookName: "Pride and Prejudice",
       authorName: "Jane Austen",
       price: 9.99,
@@ -51,6 +56,7 @@ const booksData = {
       favorite: true,
     },
     {
+      id: "6",
       bookName: "The Catcher in the Rye",
       authorName: "J.D. Salinger",
       price: 13.99,
@@ -61,6 +67,7 @@ const booksData = {
       favorite: false,
     },
     {
+      id: "7",
       bookName:
         "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg/220px-Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg",
       authorName: "J.K. Rowling",
