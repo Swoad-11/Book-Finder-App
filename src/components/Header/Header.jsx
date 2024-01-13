@@ -1,6 +1,14 @@
 import Search from "./Search";
 
-export default function Header() {
+export default function Header({ setSearchTerm, setSortOption }) {
+  const handleSearch = (searchQuery) => {
+    setSearchTerm(searchQuery);
+  };
+
+  const handleSortChange = (event) => {
+    const selectedSortOption = event.target.value;
+    setSortOption(selectedSortOption);
+  };
   return (
     <>
       <header className="mb-8 lg:mb-10 mx-auto max-w-7xl">
@@ -11,7 +19,7 @@ export default function Header() {
               Trending Books of the Year
             </h2>
 
-            <Search />
+            <Search onSearch={handleSearch} />
           </div>
 
           <div className="flex items-stretch space-x-3">
@@ -19,6 +27,7 @@ export default function Header() {
               className="cursor-pointer rounded-md border px-4 py-2 text-center text-gray-600"
               name="sortBy"
               id="sortBy"
+              onChange={handleSortChange}
             >
               <option value="">Sort</option>
               <option value="name_asc">Name (A-Z)</option>

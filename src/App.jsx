@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Books from "./components/Books/Books";
 import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar";
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortOption, setSortOption] = useState("");
   return (
     <>
       <div
@@ -12,8 +15,8 @@ function App() {
       >
         <Navbar />
         <main className="my-10 lg:my-14">
-          <Header />
-          <Books />
+          <Header setSearchTerm={setSearchTerm} setSortOption={setSortOption} />
+          <Books searchTerm={searchTerm} sortOption={sortOption} />
         </main>
         <Footer />
       </div>
